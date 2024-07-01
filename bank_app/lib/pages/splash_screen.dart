@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:bank_app/constants/colors.dart';
-import 'package:bank_app/pages/onboarding_scree.dart';
+import 'package:bank_app/pages/onboarding_scr1.dart';
 import 'package:bank_app/pages/widgets/text_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(const Duration(seconds: 4), () {
       Navigator.push(context,
-          MaterialPageRoute(builder: (context) => const onBoardingScreen()));
+          MaterialPageRoute(builder: (context) => const onBoardingScr1()));
     });
   }
 
@@ -35,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
             textt: "BANKPICK",
             textColor: AppColors.textColor,
             textSize: 35,
-            fonttext: "assets/fonts/Poppins-SemiBold.ttf",
+            fonttext: "assets/fonts/Poppins-Bold.ttf",
           )
         ],
       ),
